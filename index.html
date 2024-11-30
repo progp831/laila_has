@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pour Mon Amour ❤️</title>
+    <style>
+        /* CSS intégré */
+        body {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            background-color: #ffe6e6;
+            color: #b30000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin-top: 20%;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ff6666;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #cc0000;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pour Toi, Mon Amour LAILA INOOOOOOOO❤️</h1>
+        <p>Tu es ma source de bonheur et de lumière.</p>
+        <button id="loveButton">Clique ici</button>
+        <p id="message">Mon amour, je t'aime plus que tout au monde. LAILAAAAAAAAAAAAAAA 💕</p>
+    </div>
+
+    <script>
+        // JavaScript intégré
+        document.getElementById("loveButton").addEventListener("click", function() {
+            const message = document.getElementById("message");
+            message.style.display = "block"; // Affiche le message
+            this.style.display = "none"; // Cache le bouton après le clic
+        });
+    </script>
+</body>
+</html>
